@@ -17,12 +17,11 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://192.168.1.3:3000"],
+    origin: ["http://localhost:3000", "https://task-management-app.vercel.app"],
     credentials: true,
   })
 );
-// , "https://inventory-app.vercel.app"
-// Database connection
+
 
 mongoose
   .connect(process.env.MONGODB_URI, {})
