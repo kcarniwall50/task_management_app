@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://task-management-app.vercel.app"],
+    origin: ["http://localhost:3000", "https://task-management-app-beta-two.vercel.app/"],
     credentials: true,
   })
 );
